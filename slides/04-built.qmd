@@ -1,0 +1,37 @@
+# How JEM was built
+
+## Agents find entities and attributes
+
+> CGST Act s.109 — constitution of the Appellate Tribunal and Benches thereof
+
+<img class="deck-shot" src="assets/deck/image3.jpg" alt="India Code, CGST Act section 109, constitution of the Appellate Tribunal and its Benches">
+
+::: {.notes}
+Slides in this section: 5 minutes, through the consensus slide.
+
+One concrete trace: section 109 is how a tribunal bench enters the map. One line in the config becomes an entity file, relationships, and routing. The next slide is what happened when that line was invented.
+:::
+
+## A consistent graph is not a true graph {.smaller}
+
+JEM briefly listed a Tiruchirappalli Bench of the Madras High Court. It does not exist. It passed every automated gate. The numeric fields were placeholders.
+
+::: {.callout-warning}
+**What the pipeline did with one invented line**
+
+One line in `hc_benches_config.py` became an entity file, relationships, and routing for 6 Tamil Nadu districts.
+
+Cleanup introduced a second bug: 10 districts were rerouted to Madurai instead of Chennai.
+:::
+
+The model invented an institution that was internally consistent, geographically plausible, and green in CI for a month.
+
+::: {.notes}
+Tell it as a failure of the guarantee. The pipeline guarantees a consistent graph. It does not guarantee a true one. The invented bench exploited that gap.
+:::
+
+## Consensus pipeline
+
+::: {.notes}
+Title card only in the original deck. The step-by-step of the consensus pipeline was still to be written. Add those steps here before the talk, as short lines under this heading. Five minutes for this whole section, so keep the slide to a few lines.
+:::

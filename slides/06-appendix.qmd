@@ -1,0 +1,75 @@
+# Appendix
+
+## What case databases give you
+
+Case outcomes and judgments.
+
+What did this court decide?
+
+India Kanoon, Manupatra, and others.
+
+::: {.notes}
+Backup, after the close. The contrast: those collections answer what was decided. JEM answers whether the body exists, and how it is wired to the others.
+:::
+
+## What is hard to find in one place
+
+Whether the judicial entity exists.
+
+<img class="deck-shot" src="assets/deck/image15.png" alt="Article on the delay in setting up the GST Appellate Tribunal">
+
+::: {.notes}
+One sentence. Then the counts, if someone asks how big the map is.
+:::
+
+## Scale
+
+::: {.columns}
+::: {.column width="50%"}
+<p class="big-stat">1,117</p>
+
+**Entities mapped.** All 25 High Courts, all states and Union Territories, central tribunals (NCLT, NGT, AFT, ITAT, CESTAT, DRT, and others), quasi-judicial regulators. Zero orphan nodes in `graph.json`.
+:::
+::: {.column width="50%"}
+<p class="big-stat">1,882</p>
+
+**Relationships.** Appointment, funding, appellate, supervisory, audit, complaint, digital, and security links. Typed, and sourced.
+:::
+:::
+
+v1.0.0, released June 2026. Audits 1–4 passed. QA sprint complete. 746 `judge_strength` stubs. 84 `case_volume` rollups.
+
+Open source, open data. Maintainers: [@dso6060](https://github.com/dso6060), [@Prajna1999](https://github.com/Prajna1999), [@agriyakhetarpal](https://github.com/agriyakhetarpal). Community pull requests are open.
+
+::: {.notes}
+These counts are copied from the September 2026 deck. Edit them here when the map changes. They are not read from `graph.json` at render time yet.
+:::
+
+## The stack
+
+D3, a Python pipeline, and YAML as the datastore.
+
+<img class="deck-shot" src="assets/deck/image16.png" alt="How the map gets built: write the entity, validate, check relationships, derive scores, build the graph">
+
+::: {.notes}
+One line, unless an engineer asks. The pipeline writes YAML. The site reads the graph.
+:::
+
+## What we learned
+
+Automation raises recall. Human gates protect precision.
+
+- Roster review for a new kind of institution, not only for schema changes
+- Human review for flagged entities
+
+::: {.notes}
+The close of the Tiruchirappalli story, if it did not fit in the five-minute build section.
+:::
+
+## Offline still
+
+![JEM homepage](assets/jem-home.jpg){fig-alt="JEM homepage, with the Supreme Court at the apex and the judicial and tribunal branches below" height="640px" fig-align="center"}
+
+::: {.notes}
+Use this if the live iframe cannot load. It is the homepage only. The anomaly slides have no stills in this deck.
+:::

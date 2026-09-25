@@ -1,0 +1,23 @@
+project:
+  type: default
+  output-dir: _site
+  render:
+    - index.qmd
+
+format:
+  revealjs:
+    theme: [default, theme.scss]
+    width: 1600
+    height: 900
+    margin: 0.08
+    center: false
+    navigation-mode: linear
+    slide-number: c/t
+    hash: true
+    history: true
+    controls: true
+    progress: true
+    preview-links: false
+    auto-stretch: false
+    footer: "JEM · INDIAFOSS 2026"
+    mermaid-format: svg

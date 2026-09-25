@@ -1,0 +1,11 @@
+{{< include slides/01-open.qmd >}}
+
+{{< include slides/02-map.qmd >}}
+
+{{< include slides/03-anomalies.qmd >}}
+
+{{< include slides/04-built.qmd >}}
+
+{{< include slides/05-join.qmd >}}
+
+{{< include slides/06-appendix.qmd >}}

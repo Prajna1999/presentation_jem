@@ -1,0 +1,77 @@
+# Four ways a body fails
+
+## The queue is the second question
+
+The first question: does the room exist?
+
+::: {.fragment}
+**Delayed.** GSTAT: 8 years from statute to seated members. No statutory deadline required it to start.
+:::
+
+::: {.fragment}
+**Yet to be built.** 9 bodies legislated, never constituted. ACI, the Mediation Council, 7 state Lokayuktas.
+:::
+
+::: {.fragment}
+**Vacant.** APTEL's vacancy was filled only after a High Court writ. Allahabad High Court at about 50% strength. AFT benches fully vacant.
+:::
+
+::: {.fragment}
+**Route ambiguous.** DRAT rerouting: Hyderabad appeals go to Kolkata. Two High Courts now hear writs about the same orders.
+:::
+
+::: {.notes}
+This is the frame for the next five slides. Those five must be done in 8 minutes, not a minute more.
+
+All four modes show up in the statistics as the same undifferentiated thing: pendency.
+:::
+
+## Anomaly 1 · Delayed · GSTAT {.demo-slide}
+
+<iframe class="jem-demo" src="https://friedso.com/apps/jem/#/entity/gstat" title="GST Appellate Tribunal in JEM"></iframe>
+
+<p class="slide-hint">GSTAT. Scroll to the gap, and what the delay costs the High Court.</p>
+
+::: {.notes}
+Inside the 8-minute block. Scroll the gap section and its impact. Explain the caseload cost of the delay to the High Court.
+:::
+
+## Anomaly 2 · Yet to be built {.demo-slide}
+
+<iframe class="jem-demo" src="https://friedso.com/apps/jem/#/entity/arbitration_council_india" title="Arbitration Council of India in JEM"></iframe>
+
+<p class="slide-hint">Arbitration Council of India, legislated and not constituted. Mediation Council and the unbuilt Lokayuktas are the same status.</p>
+
+::: {.notes}
+Use the search pop-up on missing entities. The still image from the original deck stays out of this slide.
+:::
+
+## Anomaly 3 · Appointments delayed · APTEL {.demo-slide}
+
+<iframe class="jem-demo" src="https://friedso.com/apps/jem/#/entity/aptel" title="Appellate Tribunal for Electricity in JEM"></iframe>
+
+<p class="slide-hint">APTEL.</p>
+
+::: {.notes}
+Show APTEL. The vacancy was filled only after a High Court writ petition.
+:::
+
+## Anomaly 4 · Where to appeal · DRAT Hyderabad {.demo-slide}
+
+<iframe class="jem-demo" src="https://friedso.com/apps/jem/#/entity/drt_hyderabad" title="Debt Recovery Tribunal, Hyderabad in JEM"></iframe>
+
+<p class="slide-hint">DRT Hyderabad. Its appeal link runs to DRAT Kolkata. There is no DRAT Hyderabad page in the map.</p>
+
+::: {.notes}
+DRAT rerouting: Hyderabad appeals go to Kolkata. Two High Courts now hear writs about the same orders.
+:::
+
+## Anomaly 4 · Where to appeal · Food Safety Tribunal {.demo-slide}
+
+<iframe class="jem-demo" src="https://friedso.com/apps/jem/" title="JEM homepage, no Food Safety Tribunal page yet"></iframe>
+
+<p class="slide-hint">No Food Safety Tribunal page in the map yet. Search for it from here.</p>
+
+::: {.notes}
+The graph has no Food Safety Tribunal entity, so this frame stays on the homepage. Search from here. Close the anomaly block on this slide. Eight minutes total for this section, including the framing slide.
+:::

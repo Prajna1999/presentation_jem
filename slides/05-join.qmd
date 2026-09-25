@@ -1,0 +1,72 @@
+# Help us complete JEM
+
+## Three steps
+
+::: {.fragment}
+**1. Pick a prompt.** Join the Discord, or sign in at [friedso.com/apps/jem](https://friedso.com/apps/jem/) and take a prompt that fits your token budget.
+:::
+
+::: {.fragment}
+**2. Ask your model.** Copy the prompt. Download the file it returns.
+:::
+
+::: {.fragment}
+**3. Send the file back.** Upload it through the Google Form, post it in Discord, or send it by email.
+:::
+
+LETI — Law, Engineering and Technology for India
+
+![Discord QR code](assets/deck/image14.png){.discord-qr}
+
+::: {.notes}
+Only if time permits. Budget 3 minutes. This is the last block before the close, and the talk should finish at 20 minutes.
+
+Agriya or Prajna can run the contribution path live if the clock allows. Otherwise read the three steps and go to the team slide.
+:::
+
+## Team {.smaller}
+
+::: {.columns}
+::: {.column width="33%"}
+### Divya Sornaraja
+[@dso6060](https://github.com/dso6060)
+
+Lead maintainer. Data, pipeline, deploy.
+
+[LinkedIn](https://www.linkedin.com/in/divya-sornaraja-12a14a14)
+:::
+::: {.column width="33%"}
+### Prajna Prayas
+[@Prajna1999](https://github.com/Prajna1999)
+
+Co-maintainer. UI, GitHub admin.
+
+[LinkedIn](https://www.linkedin.com/in/prajna-prayas)
+:::
+::: {.column width="33%"}
+### Agriya Khetarpal
+[@agriyakhetarpal](https://github.com/agriyakhetarpal)
+
+Co-maintainer. Community lead, LETI. GitHub admin.
+
+[LinkedIn](https://www.linkedin.com/in/agriyakhetarpal)
+:::
+:::
+
+::: {.notes}
+Names only if you are handing over. Otherwise a glance is enough on the way to the close.
+:::
+
+## Thank you {.center-slide background-color="#fbfbf8"}
+
+JEM is open. Fork it, mirror it, build on it.
+
+[friedso.com/apps/jem](https://friedso.com/apps/jem/) · [github.com/datastiltskin/jem](https://github.com/datastiltskin/jem)
+
+Join the LETI Discord.
+
+![Discord QR code](assets/deck/image14.png){.discord-qr}
+
+::: {.notes}
+Stop at 20 minutes. Questions can use the appendix: what case databases already give you, the counts, the stack, and the human-review gate.
+:::
