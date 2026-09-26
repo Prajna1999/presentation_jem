@@ -1,29 +1,5 @@
 # Help us complete JEM
 
-## Three steps
-
-::: {.fragment}
-**1. Pick a prompt.** Join the Discord, or sign in at [friedso.com/apps/jem](https://friedso.com/apps/jem/) and take a prompt that fits your token budget.
-:::
-
-::: {.fragment}
-**2. Ask your model.** Copy the prompt. Download the file it returns.
-:::
-
-::: {.fragment}
-**3. Send the file back.** Upload it through the Google Form, post it in Discord, or send it by email.
-:::
-
-LETI — Law, Engineering and Technology for India
-
-![Discord QR code](assets/deck/image14.png){.discord-qr}
-
-::: {.notes}
-Only if time permits. Budget 3 minutes. This is the last block before the close, and the talk should finish at 20 minutes.
-
-Agriya or Prajna can run the contribution path live if the clock allows. Otherwise read the three steps and go to the team slide.
-:::
-
 ## Team {.smaller}
 
 ::: {.columns}
@@ -65,7 +41,7 @@ JEM is open. Fork it, mirror it, build on it.
 
 Join the LETI Discord.
 
-![Discord QR code](assets/deck/image14.png){.discord-qr}
+![LETI Discord QR code](assets/leti-discord.png){.discord-qr}
 
 ::: {.notes}
 Stop at 20 minutes. Questions can use the appendix: what case databases already give you, the counts, the stack, and the human-review gate.

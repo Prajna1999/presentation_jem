@@ -12,26 +12,43 @@ Slides in this section: 5 minutes, through the consensus slide.
 One concrete trace: section 109 is how a tribunal bench enters the map. One line in the config becomes an entity file, relationships, and routing. The next slide is what happened when that line was invented.
 :::
 
-## A consistent graph is not a true graph {.smaller}
+## However…. Hallucination {.smaller}
 
-JEM briefly listed a Tiruchirappalli Bench of the Madras High Court. It does not exist. It passed every automated gate. The numeric fields were placeholders.
+JEM briefly listed a Tiruchirappalli Bench of the Madras High Court. It doesn't exist. It passed every automated gate.
 
-::: {.callout-warning}
-**What the pipeline did with one invented line**
+Also - all numerics were placeholders.
 
-One line in `hc_benches_config.py` became an entity file, relationships, and routing for 6 Tamil Nadu districts.
+### The Bug
 
-Cleanup introduced a second bug: 10 districts were rerouted to Madurai instead of Chennai.
-:::
+- One line in `hc_benches_config.py` → entity file + relationships + routing for 6 TN districts
+- Pipeline amplified one hallucination into a consistent subgraph
+- Cleanup introduced a second bug: 10 districts rerouted to Madurai instead of Chennai
 
-The model invented an institution that was internally consistent, geographically plausible, and green in CI for a month.
+> We built a pipeline that guarantees a consistent graph, not a true graph — and an LLM exploited the gap by inventing an institution that was internally consistent, geographically plausible, and CI-green for a month.
+
+## Can consensus pipeline fix it?
+
+<p class="trust-sub">Models can agree or disagree. Only verified truth and domain experts decide what goes into JEM.</p>
+
+<div class="trust">
+<div class="trust-loop"><div class="loop-path"><span>Disagreements loop back to refine the prompt</span></div></div>
+<div class="trust-flow">
+<div class="trust-step"><h4>Task</h4><p>Pinned prompt<br>and schema</p></div>
+<div class="trust-step"><h4>Independent models</h4><p class="trust-chips"><span>Claude</span><span>GPT</span><span>DeepSeek</span></p></div>
+<div class="trust-step"><h4>Agreement</h4><p>Do they agree,<br>field by field?</p></div>
+<div class="trust-step t-gold"><h4>Gold set</h4><p>Checked against<br>hand-verified truth</p></div>
+<div class="trust-step t-expert"><h4>Expert sign-off</h4><p>Experts approve,<br>maintainers merge</p></div>
+<div class="trust-step t-final"><h4>Canonical JEM</h4><p>What the public sees</p></div>
+</div>
+<div class="trust-tiers">
+<div class="tier-machine"><strong>1 · Machine consensus</strong> a signal, not proof</div>
+<div class="tier-gold"><strong>2 · Gold set</strong></div>
+<div class="tier-expert"><strong>3 · Expert review</strong></div>
+</div>
+</div>
+
+<p class="trust-rule"><strong>Agreement ≠ correctness.</strong> Models can share the same bias and agree while wrong. So nothing edits canonical data without human approval.</p>
 
 ::: {.notes}
-Tell it as a failure of the guarantee. The pipeline guarantees a consistent graph. It does not guarantee a true one. The invented bench exploited that gap.
-:::
-
-## Consensus pipeline
-
-::: {.notes}
-Title card only in the original deck. The step-by-step of the consensus pipeline was still to be written. Add those steps here before the talk, as short lines under this heading. Five minutes for this whole section, so keep the slide to a few lines.
+Five minutes for this whole section. Walk left to right: several models answer the same pinned prompt independently; agreement is only a signal; the gold set and experts decide. End on the rule: nothing reaches canonical data without a human.
 :::

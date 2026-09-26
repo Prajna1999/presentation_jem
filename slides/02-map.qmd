@@ -1,5 +1,3 @@
-# The base map
-
 ## A base map of the Indian legal system
 
 - Courts, court-adjacent bodies, and court-support bodies
@@ -9,30 +7,4 @@
 
 ::: {.notes}
 Part of the 2-minute glimpse with the next two slides. Do not walk every bullet. The point is that JEM is a map of institutions and the links between them, with a rubric on each node.
-:::
-
-## Live: what JEM is {.demo-slide}
-
-<iframe class="jem-demo" src="https://friedso.com/apps/jem/" title="JEM homepage"></iframe>
-
-<p class="slide-hint">Click the map to drive it. Click the beige margin, then the arrow keys, to leave it.</p>
-
-::: {.notes}
-Start the demo here. About two minutes across this slide and the next.
-
-Path: homepage, then timelines, then the Supreme Court, then the Madras High Court. Use search, and show search's one box.
-
-If the venue network fails, jump to the appendix slide "Offline still".
-:::
-
-## Live: birth and death {.demo-slide}
-
-<iframe class="jem-demo" src="https://friedso.com/apps/jem/#temporal-structure-wrap" title="Timeline on the JEM homepage"></iframe>
-
-<p class="slide-hint">Timeline · how we got here, at the bottom of the homepage. Not the interactive map.</p>
-
-::: {.notes}
-This is the homepage timeline, the section titled "Timeline · how we got here", under the judicial hierarchy. It is not the interactive map.
-
-Scroll the frame to that section if it opens at the top. Run through eras and years quickly. When were these bodies formed, and when did they end.
 :::

@@ -189,3 +189,167 @@ $selection-bg: #f5e6d3 !default;
 .reveal .slide-number {
   color: #a8a29e;
 }
+
+// Consensus pipeline diagram ("Can consensus pipeline fix it?")
+$trust-gap: 40px;
+$trust-machine: #57534e;
+$trust-gold: #b7791f;
+$trust-expert: #7c3d12;
+
+.reveal .trust-sub {
+  margin: 0 0 1.6em;
+  font-size: 0.6em;
+  color: #57534e;
+}
+
+.reveal .trust {
+  font-size: 25px;
+  line-height: 1.35;
+}
+
+.reveal .trust-flow,
+.reveal .trust-loop,
+.reveal .trust-tiers {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: $trust-gap;
+}
+
+// Dashed return path from the gold set (col 4) back to the task (col 1).
+.reveal .trust-loop .loop-path {
+  grid-column: 1 / 5;
+  position: relative;
+  margin: 0 calc((100% - 3 * #{$trust-gap}) / 8) 6px;
+  height: 34px;
+  border: 2px dashed $trust-gold;
+  border-bottom: 0;
+}
+
+.reveal .trust-loop .loop-path::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  bottom: -12px;
+  border: 8px solid transparent;
+  border-top: 12px solid $trust-gold;
+  border-bottom: 0;
+}
+
+.reveal .trust-loop .loop-path span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  padding: 0 14px;
+  background: #fbfbf8;
+  color: $trust-gold;
+  font-size: 23px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.reveal .trust-step {
+  position: relative;
+  min-height: 250px;
+  padding: 24px 14px;
+  border: 1px solid #d6d3d1;
+  border-top: 6px solid $trust-machine;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+}
+
+.reveal .trust-step:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  top: 50%;
+  right: -$trust-gap;
+  width: $trust-gap;
+  transform: translateY(-50%);
+  color: #a8a29e;
+  font-size: 30px;
+  text-align: center;
+}
+
+.reveal .trust-step h4 {
+  margin: 0 0 16px;
+  font-size: 30px;
+  line-height: 1.15;
+  color: #3e2513;
+  text-transform: none;
+}
+
+.reveal .trust-step p {
+  margin: 0;
+  color: #57534e;
+}
+
+.reveal .trust-chips span {
+  display: block;
+  margin: 0 auto 8px;
+  padding: 3px 10px;
+  width: fit-content;
+  border: 1px solid #d6d3d1;
+  border-radius: 999px;
+  font-size: 22px;
+  color: #292524;
+}
+
+.reveal .trust-step.t-gold { border-top-color: $trust-gold; }
+.reveal .trust-step.t-expert { border-top-color: $trust-expert; }
+
+.reveal .trust-step.t-final {
+  border-color: #3e2513;
+  background: #3e2513;
+}
+
+.reveal .trust-step.t-final h4,
+.reveal .trust-step.t-final p {
+  color: #fbfbf8;
+}
+
+.reveal .trust-tiers {
+  margin-top: 24px;
+}
+
+.reveal .trust-tiers > div {
+  padding: 10px 12px;
+  border: 1px solid;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 21px;
+}
+
+.reveal .trust-tiers strong {
+  display: block;
+  font-size: 24px;
+}
+
+.reveal .trust-tiers .tier-machine {
+  grid-column: 2 / 4;
+  border-color: $trust-machine;
+  background: #f5f5f4;
+  color: $trust-machine;
+}
+
+.reveal .trust-tiers .tier-gold {
+  grid-column: 4;
+  border-color: $trust-gold;
+  background: #fbf3e4;
+  color: $trust-gold;
+}
+
+.reveal .trust-tiers .tier-expert {
+  grid-column: 5;
+  border-color: $trust-expert;
+  background: #f3e6dc;
+  color: $trust-expert;
+}
+
+.reveal .trust-rule {
+  margin: 56px 0 0;
+  padding: 20px 26px;
+  border-left: 6px solid $trust-gold;
+  background: #fff;
+  font-size: 27px;
+}
